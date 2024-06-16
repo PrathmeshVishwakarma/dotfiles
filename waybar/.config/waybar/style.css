@@ -1,0 +1,113 @@
+* {
+    font-family: "FiraCode Nerd Font";
+    border-radius: 20px;
+}
+
+window#waybar {
+    background: transparent;
+}
+#workspaces {
+}
+
+#workspaces button {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #ffffff;
+    background: transparent;
+}
+
+#workspaces button:hover {
+    box-shadow: None;
+    border: None;
+}
+
+#workspaces button.focused {
+}
+
+#workspaces button.urgent {
+    color: #f38ba8;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#network,
+#pulseaudio,
+#tray {
+    border-radius: 20px;
+    margin: 6px 3px;
+    padding: 6px 12px;
+    font-family: "JetBrainsMono NF";
+    font-size: 14px;
+}
+
+#custom-launcher {
+    margin: 6px 3px;
+    padding: 6px 12px;
+    background: rgba(21, 18, 27, 0.8);
+    color: rgb(4, 165, 229);
+    border: 1px solid #93f5c5;
+}
+
+#clock {
+    background: rgba(21, 18, 27, 0.8);
+    color: rgb(125, 196, 228);
+    border: 1px solid #93f5c5;
+}
+
+#cpu {
+    background-color: rgba(21, 18, 27, 0.8);
+    color: 	rgb(220, 138, 120);
+    border: 1px solid #93f5c5;
+}
+
+#memory {
+    background: rgba(21, 18, 27, 0.8);
+    color: rgb(198, 160, 246);
+    border: 1px solid #93f5c5;
+}
+
+#network {
+    background: rgba(21, 18, 27, 0.8);
+    color: rgb(238, 212, 159);
+    border: 1px solid #93f5c5;
+}
+
+#network.disconnected {
+    background: rgba(21, 18, 27, 0.8);
+    color: rgb(238, 212, 159);
+    border: 1px solid #93f5c5;
+}
+
+#pulseaudio {
+    background: rgba(21, 18, 27, 0.8);
+    color: rgb(183, 189, 248);
+    border: 1px solid #93f5c5;
+}
+
+#pulseaudio.muted {
+    background: rgba(21, 18, 27, 0.8);
+    color: #ffffff;
+    border: 1px solid #93f5c5;
+}
+
+#tray {
+    background: rgba(21, 18, 27, 0.8);
+    color: #ffffff;
+    border: 1px solid #93f5c5;
+}
+
+/*#tray > .passive {*/
+/*    background: rgba(21, 18, 27, 0.8);*/
+/*    color: #ffffff;*/
+/*    border: 1px solid #93f5c5;*/
+/*}*/
+/**/
+/*#tray > .needs-attention {*/
+/*    background: rgba(21, 18, 27, 0.8);*/
+/*    color: #ffffff;*/
+/*    border: 1px solid #93f5c5;*/
+/*}*/
