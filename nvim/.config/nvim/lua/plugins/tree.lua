@@ -1,4 +1,3 @@
-vim.keymap.set("n", "<leader>mm", "<cmd>NvimTreeToggle<CR>")
 return {
 	{ "nvim-tree/nvim-web-devicons", lazy = false },
 	{

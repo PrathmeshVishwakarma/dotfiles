@@ -1,7 +1,7 @@
 import = [ "/usr/lib/node_modules/alacritty-themes/themes/Dracula.toml" ]
 
 [window]
-opacity = 0.7
+opacity = 0.75
 blur = true
 
   [window.padding]

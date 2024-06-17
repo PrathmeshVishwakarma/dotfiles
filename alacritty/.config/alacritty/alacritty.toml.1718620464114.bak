@@ -1,0 +1,17 @@
+import = [
+  "/usr/lib/node_modules/alacritty-themes/themes/Catppuccin-Mocha.toml"
+]
+
+[window]
+opacity = 0.75
+blur = true
+
+  [window.padding]
+  x = 5
+  y = 5
+
+[font]
+size = 13
+
+  [font.normal]
+  family = "FiraCode Nerd Font Propo"

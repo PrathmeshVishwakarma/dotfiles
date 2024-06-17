@@ -8,6 +8,10 @@ vim.keymap.set("n", "<leader>ww", ":w<CR>")
 vim.keymap.set("n", "<leader>qq", ":q<cr>")
 vim.keymap.set("n", "<leader>wq", ":wq<CR>")
 
+-- togglers
+vim.keymap.set("n", "<leader>mm", "<cmd>NvimTreeToggle<CR>")
+vim.keymap.set("n", "<leader>t", "<cmd>TransparentToggle<CR>")
+
 -- disable netrw
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
