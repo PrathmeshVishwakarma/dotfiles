@@ -1,5 +1,24 @@
 local config = function()
+	-- icons for errors and warnings
+	local signs = { Error = "󰅚 ", Warn = "󰀪 ", Hint = "󰌶 ", Info = " " }
+	for type, icon in pairs(signs) do
+		local hl = "DiagnosticSign" .. type
+		vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+	end
+
 	local on_attach = function(client, bufnr)
+		-- vim diagnostics floating window
+		vim.diagnostic.config({
+			virtual_text = false,
+		})
+		vim.o.updatetime = 250
+		vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
+			group = vim.api.nvim_create_augroup("float_diagnostic", { clear = true }),
+			callback = function()
+				vim.diagnostic.open_float(nil, { focus = false })
+			end,
+		})
+
 		local opts = { noremap = true, silent = true, buffer = bufnr }
 		vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
 

@@ -25,14 +25,14 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- pasting remap
-vim.keymap.set("x", "<leader>p", '"_dP')
+vim.keymap.set("x", "p", '"_dP')
 
--- nvim tree
--- vim.keymap.set("n", "<leader>m", "<cmd>Neotree toggle<CR>")
--- vim.keymap.set("n", "<leader>c", "<cmd>NvimTreeClose<CR>")
--- vim.keymap.set("n", "<leader>f", ":NvimTreeToggle<CR>")
+-- deleting keymap
+vim.keymap.set({ "n", "v" }, "<C-x>", "x")
+vim.keymap.set({ "n", "v" }, "x", '"_x')
+vim.keymap.set({ "n", "v" }, "<delete>", '"_x')
 
--- moving from windows
+-- moving windows
 vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
@@ -44,5 +44,11 @@ vim.keymap.set("n", "<leader>sh", ":split<CR>")
 vim.keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 
 -- indentation
-vim.keymap.set("v", "<", "<gv")
-vim.keymap.set("v", ">", ">gv")
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "H", "<gv")
+vim.keymap.set("v", "L", ">gv")
+
+-- comment
+vim.api.nvim_set_keymap("n", "<C-c>", "gcc", { noremap = false })
+vim.api.nvim_set_keymap("v", "<C-c>", "gcc", { noremap = false })
