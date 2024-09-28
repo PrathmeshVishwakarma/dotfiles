@@ -8,6 +8,7 @@ return {
 				lua = { "stylua" },
 				python = { "isort", "black" },
 				rust = { "rustfmt" },
+				-- c = { "clang-format" },
 			},
 			format_on_save = {
 				lsp_fallback = true,

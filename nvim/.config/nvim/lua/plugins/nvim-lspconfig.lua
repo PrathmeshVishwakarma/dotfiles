@@ -106,6 +106,23 @@ local config = function()
 		},
 	})
 
+	lspconfig.clangd.setup({
+		capabilities = capabilities,
+		on_attach = on_attach,
+		cmd = {
+			"clangd",
+		},
+		filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto" },
+		single_file_support = true,
+	})
+
+	lspconfig.asm_lsp.setup({
+		capabilities = capabilities,
+		on_attach = on_attach,
+		cmd = { "asm-lsp" },
+		filetypes = { "asm", "s", "S" },
+	})
+
 	-- local lsp_fmt_group = vim.api.nvim_create_augroup("LspFormattingGroup", {})
 	-- vim.api.nvim_create_autocmd("BufWritePre", {
 	-- 	group = lsp_fmt_group,

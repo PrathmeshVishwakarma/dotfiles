@@ -7,6 +7,7 @@ return {
 			lua = { "luacheck" },
 			python = { "flake8" },
 			rust = { "snyk_iac" },
+			c = { "cpplint" },
 		}
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
 
