@@ -27,5 +27,6 @@
   "sonokai": { "branch": "master", "commit": "a90d437f1f4e48825150065987d175e2a45fa39e" },
   "telescope.nvim": { "branch": "master", "commit": "c392f1b78eaaf870ca584bd698e78076ed301b26" },
   "transparent.nvim": { "branch": "main", "commit": "fd35a46f4b7c1b244249266bdcb2da3814f01724" },
-  "vim": { "branch": "master", "commit": "ada471d684d4acfe803c4e033d7c3ae5d7252db6" }
+  "vim": { "branch": "master", "commit": "ada471d684d4acfe803c4e033d7c3ae5d7252db6" },
+  "vim-tmux-navigator": { "branch": "master", "commit": "a9b52e7d36114d40350099f254b5f299a35df978" }
 }

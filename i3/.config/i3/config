@@ -37,6 +37,10 @@ exec --no-startup-id nm-applet
 # Setup Picom
 exec_always --no-startup-id picom -b
 
+# Set mouse acceleration
+exec xinput set-prop 11 "libinput Accel Profile Enabled" 0 1 0
+exec xinput --set-prop 11 'libinput Accel Speed' -0.25
+
 # Set previous background
 exec nitrogen --restore
 
